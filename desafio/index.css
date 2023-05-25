@@ -1,0 +1,151 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 70%;
+	display: flex;
+	border-radius: 30px;
+	color: white;
+	box-shadow: 0 5px 5px 0 rgb(173, 168, 168);
+}
+
+.divLeft,
+.divRight {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.divLeft {
+	border-radius: 30px;
+	background: radial-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.circleLeft {
+	background: linear-gradient(hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+	height: 40%;
+	width: 55%;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	font-size: 800;
+	margin: 5% 0 5% 0;
+}
+
+.divIcon {
+	display: flex;
+}
+
+.textBottomCircle {
+	max-width: 65%;
+	font-size: 300;
+	text-align: center;
+	color: hsl(0, 0%, 70%);
+}
+
+.titleLeft {
+	color: hsl(0, 0%, 70%);
+}
+
+.titleCircle {
+	font-size: 4rem;
+}
+
+.divRight {
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	padding-left: 5%;
+}
+
+.red,
+.yellow,
+.green,
+.blue {
+	width: 90%;
+	margin-top: 5%;
+	height: 11%;
+	border-radius: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+.red {
+	background-color: hsl(0, 100%, 92%);
+}
+
+.yellow {
+	background-color: hsl(39, 100%, 92%);
+}
+
+.green {
+	background-color: hsl(166, 76%, 90%);
+}
+
+.blue {
+	background-color: hsl(234, 100%, 91%);
+}
+
+.buttonRight {
+	width: 90%;
+	border-radius: 20px;
+	height: 11%;
+	margin-top: 5%;
+	font-size: 1rem;
+	cursor: pointer;
+	color: white;
+	background-color: hsl(224, 30%, 27%);
+}
+.buttonRight:hover {
+	background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media ((max-width: 500px)) {
+	.container {
+		width: 100%;
+		height: 100%;
+		border-radius: 0;
+		box-shadow: 0;
+		flex-direction: column;
+	}
+
+	.divLeft,
+	.divRight {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.divLeft {
+		border-radius: 0 0 30px 30px;
+	}
+
+	.circleLeft {
+		height: 30%;
+		width: 35%;
+	}
+	.titleCircle {
+		font-size: 3rem;
+	}
+}
